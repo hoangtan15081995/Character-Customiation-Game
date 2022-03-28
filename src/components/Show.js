@@ -29,23 +29,25 @@ function Show({
   randomEyes,
   randomMouths,
   randomNoses,
+  listRandom,
+  setListRandom,
 }) {
-  const [listRandom, setListRandom] = useState([
-    { key1: "0", key2: randomBody },
-    { key1: "800", key2: randomFacial_hair },
-    { key1: "900", key2: randomHair },
-    { key1: "800", key2: randomGlasses },
-    { key1: "1000", key2: randomHats },
-    { key1: "100", key2: randomEarrings },
-    { key1: "600", key2: randomNeckwear },
-    { key1: "500", key2: randomLayer_1 },
-    { key1: "500", key2: randomLayer_2 },
-    { key1: "500", key2: randomLayer_3 },
-    { key1: "700", key2: randomEyebrows },
-    { key1: "700", key2: randomEyes },
-    { key1: "700", key2: randomMouths },
-    { key1: "700", key2: randomNoses },
-  ]);
+  // const [listRandom, setListRandom] = useState([
+  //   { key1: "0", key2: randomBody },
+  //   { key1: "800", key2: randomFacial_hair },
+  //   { key1: "900", key2: randomHair },
+  //   { key1: "800", key2: randomGlasses },
+  //   { key1: "1000", key2: randomHats },
+  //   { key1: "100", key2: randomEarrings },
+  //   { key1: "600", key2: randomNeckwear },
+  //   { key1: "500", key2: randomLayer_1 },
+  //   { key1: "500", key2: randomLayer_2 },
+  //   { key1: "500", key2: randomLayer_3 },
+  //   { key1: "700", key2: randomEyebrows },
+  //   { key1: "700", key2: randomEyes },
+  //   { key1: "700", key2: randomMouths },
+  //   { key1: "700", key2: randomNoses },
+  // ]);
 
   const handleClick = () => {
     const randomBody = images0[Math.floor(Math.random() * images0.length)];

@@ -142,11 +142,6 @@ function Main() {
     { key1: "700", key2: randomNoses },
   ]);
 
-  const addNewTask = (element) => {
-    console.log(images0);
-    console.log(element.target);
-    console.log(listRandom[0]);
-  };
   return (
     <>
       <div className="main">
@@ -179,6 +174,8 @@ function Main() {
           randomEyes={randomEyes}
           randomMouths={randomMouths}
           randomNoses={randomNoses}
+          listRandom={listRandom}
+          setListRandom={setListRandom}
         />
         <Character
           images0={images0}
@@ -195,7 +192,8 @@ function Main() {
           images11={images11}
           images12={images12}
           images13={images13}
-          addNewTask={addNewTask}
+          listRandom={listRandom}
+          setListRandom={setListRandom}
         />
       </div>
     </>
